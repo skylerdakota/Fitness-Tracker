@@ -15,15 +15,22 @@ app.use(express.static("public"));
 
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/custommethods", { useNewUrlParser: true });
 
-app.post("/submit", ({ body }, res) => {
-  Workout.create(body)
-    .then(dbWorkout => {
-      res.json(dbWorkout);
+app.post("/submit", ({body}, res) => {
+  const user = new User(body);
+  user.continueWorkout();
+  user.newWorkout();
+  user.complete();
+  user.new();
+
+  User.create(user)
+    .then(dbUser => {
+      res.json(dbUser);
     })
     .catch(err => {
       res.json(err);
     });
 });
+
 
 app.listen(PORT, () => {
   console.log(`App running on port ${PORT}!`);
