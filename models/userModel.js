@@ -6,6 +6,7 @@ const workoutSchema = new Schema({
 
   day: {
     type: Date,
+    default: Date.now
   },
 
   exercises: [
@@ -37,29 +38,10 @@ const workoutSchema = new Schema({
         type: Number
       },
     }
-    ]
+    ],
+    totalDuration: Number,
 });
 
-// UserSchema.methods.continueWorkout = function () {
-//   this.day = ${this.day};
-//   return this.day;
-// };
-
-// UserSchema.methods.newWorkout = function () {
-//   this.day = ${this.day};
-//   return this.day;
-// };
-
-// UserSchema.methods.complete = function () {
-//   this.exercises = ${this.exercises};
-//   return this.exercises;
-// };
-
-// UserSchema.methods.new = function () {
-//   this.exercises = ${this.exercises};
-//   return this.exercises;
-// };
-
-const Workout = mongoose.model("User", workoutSchema);
+const Workout = mongoose.model("Workout", workoutSchema);
 
 module.exports = Workout;
