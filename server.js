@@ -18,8 +18,8 @@ app.use(express.static("public"));
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/userModel",
   {
     useNewUrlParser: true,
-    useCreateIndex: true,
     useUnifiedTopology: true,
+    useCreateIndex: true,
     useFindAndModify: false
   }
 );

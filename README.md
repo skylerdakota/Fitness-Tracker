@@ -1,6 +1,7 @@
 # Fitness-Tracker
 
 [Fitness Tracker Github Repo](https://skylerdakota.github.io/Fitness-Tracker/)
+
 [Fitness Tracker Deployed](https://skylerdakota.github.io/Fitness-Tracker/)
 
 ![Demo](assets/img/tracker.png)
@@ -22,7 +23,7 @@
 
 * This project is a fullstack application that tracks the users workouts and provides visual data to track progress. The application uses node.js, express, MongoDB and mongoose.
 
-## User Story
+#### User Story
 
 * As a user, I want to be able to view create and track daily workouts. I want to be able to log multiple exercises in a workout on a given day. I should also be able to track the name, type, weight, sets, reps, and duration of exercise. If the exercise is a cardio exercise, I should be able to track my distance traveled.
 
@@ -35,7 +36,7 @@
 * The application will be invoked by using the following command when in the appropriate directory:
 
 ```
-node index.js
+node server.js
 ```
 
 #### Contributor Guidelines
