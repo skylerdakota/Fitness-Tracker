@@ -70,7 +70,7 @@
 
 // const Workout = require("../models/userModel");
 // Requires in models folder and express npm package
-const db = require("../models/userModel");
+const db = require("../models");
 const router = require("express").Router();
 
     // Finds all existing workouts
@@ -104,7 +104,7 @@ const router = require("express").Router();
     });
 
     // Updates workouts
-    router.put ("/api/workouts:id", (req, res) =>{
+    router.put ("/api/workouts/:id", (req, res) =>{
         db.Workout.findByIdAndUpdate(
             req.params.id,
             {$push: {exercises: req.body}}
