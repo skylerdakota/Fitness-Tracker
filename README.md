@@ -1,11 +1,11 @@
 # Fitness-Tracker
 
-[Fitness Tracker Github Repo](https://skylerdakota.github.io/Fitness-Tracker/)
+[Fitness Tracker Github Repo](https://github.com/skylerdakota/Fitness-Tracker)
 
 [Fitness Tracker Deployed](https://skylers-fitness-tracker.herokuapp.com/)
 
-![Demo](assets/img/tracker.png)
-![Demo](assets/img/add.png)
+![Demo](public/assets/img/tracker.png)
+![Demo](./public/assets/img/add.png)
 ![Demo](assets/img/dashboard.png)
 
 #### Table of Contents
