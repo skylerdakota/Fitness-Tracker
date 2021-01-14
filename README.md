@@ -6,7 +6,7 @@
 
 ![Demo](public/assets/img/tracker.png)
 ![Demo](./public/assets/img/add.png)
-![Demo](assets/img/dashboard.png)
+![Demo](public/assets/img/dashboard.png)
 
 #### Table of Contents
 
